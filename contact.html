@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Sophrolo'Joie | Cathy de Almeida Sophrologue</title>
+  <meta name="description" content="Contactez Cathy de Almeida, sophrologue à Montauriol. Prise de rendez-vous par téléphone, formulaire ou Facebook. Cabinet 276 route du Levant 47330 Montauriol." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Sophrolo'<span>Joie</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="la-sophrologie.html">La sophrologie</a></li>
+        <li><a href="seances-et-tarifs.html">Séances & tarifs</a></li>
+        <li><a href="votre-sophrologue.html">Votre sophrologue</a></li>
+        <li><a href="contact.html" class="btn-nav active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Rendez-vous</p>
+      <h1>Contactez-moi</h1>
+      <p>Je vous réponds dans les meilleurs délais · Du lundi au vendredi, 10h – 20h</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section">
+    <div class="container contact-page-grid">
+
+      <!-- INFOS -->
+      <div>
+        <div class="contact-info-block reveal">
+          <p class="section-label">Téléphone</p>
+          <h3><a href="tel:0616172869">06 16 17 28 69</a></h3>
+          <p>Du lundi au vendredi, de 10h à 20h.</p>
+        </div>
+
+        <div class="contact-info-block reveal">
+          <p class="section-label">Cabinet</p>
+          <h3>276 route du Levant</h3>
+          <p>47 330 Montauriol<br />(derrière le restaurant "Chez Marianne")</p>
+          <p style="margin-top:12px; font-size:0.85rem; color:var(--text-light);">
+            À 5 min de Castillonnès · 15 min de Monflanquin, Villeréal & Issigeac<br />
+            30 min de Bergerac & Villeneuve-sur-Lot
+          </p>
+        </div>
+
+        <div class="contact-info-block reveal">
+          <p class="section-label">Ateliers collectifs</p>
+          <h3>Espace Ginko</h3>
+          <p>249 avenue de Piquemil<br />47 150 Monflanquin</p>
+        </div>
+
+        <div class="contact-info-block reveal">
+          <p class="section-label">Réseaux sociaux</p>
+          <h3><a href="https://www.facebook.com" target="_blank" rel="noopener">Page Facebook Sophrolo'Joie</a></h3>
+          <p>Sophrolo'Joie Cathy sophrologue</p>
+        </div>
+
+        <div class="contact-info-block reveal">
+          <p class="section-label">Séances en visio</p>
+          <h3>Disponibles à distance</h3>
+          <p>Vous pouvez bénéficier d'un accompagnement individuel depuis chez vous, partout en France.</p>
+        </div>
+
+        <!-- CARTE -->
+        <div class="map-embed reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.0!2d0.7850!3d44.6450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aabf9e3b8b4b4b%3A0x0!2sMontauriol%2C%2047330!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+            width="100%"
+            height="260"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation du cabinet Sophrolo'Joie"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="contact-page-form reveal">
+        <p class="section-label">Formulaire de contact</p>
+        <h2 style="margin-bottom:8px;">Envoyez-moi un message</h2>
+        <p style="color:var(--text-mid); margin-bottom:32px; font-size:0.9rem;">Pour une demande de rendez-vous, une question sur les séances ou les tarifs, n'hésitez pas à me contacter.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="nom" placeholder="Nom *" required />
+            <input type="text" name="prenom" placeholder="Prénom *" required />
+          </div>
+          <input type="email" name="email" placeholder="Votre email *" required />
+          <input type="tel" name="tel" placeholder="Téléphone (optionnel)" />
+          <select name="sujet" style="padding:14px 18px; border:1.5px solid var(--green-pale); border-radius:12px; font-family:var(--font-body); font-size:0.9rem; color:var(--text-mid); background:var(--cream); outline:none; width:100%;">
+            <option value="">Sujet de votre message</option>
+            <option>Demande de rendez-vous</option>
+            <option>Renseignements sur les séances</option>
+            <option>Renseignements sur les tarifs</option>
+            <option>Atelier collectif</option>
+            <option>Autre</option>
+          </select>
+          <textarea name="message" placeholder="Votre message *" rows="5" required></textarea>
+          <p style="font-size:0.78rem; color:var(--text-light);">En soumettant ce formulaire, vous acceptez que vos données soient utilisées pour vous recontacter dans le cadre de votre demande, conformément à notre politique de confidentialité.</p>
+          <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+          <p class="form-success" id="formSuccess">✅ Merci, votre message a bien été envoyé ! Je vous répondrai dans les meilleurs délais.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OFFRE RAPPEL -->
+  <section class="section bg-green" style="padding:64px 0;">
+    <div class="container" style="text-align:center;">
+      <p class="section-label" style="color:var(--gold);">Offre de bienvenue</p>
+      <h2 style="color:var(--warm-white); margin-bottom:16px;">Séance découverte à 35 €</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 32px;">Venez découvrir la sophrologie sans engagement. Une première séance pour vous présenter la méthode et explorer vos besoins.</p>
+      <a href="tel:0616172869" class="btn btn-white">📞 06 16 17 28 69</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Sophrolo'<span>Joie</span></a>
+        <p>Sophrologue certifiée RNCP<br />276 route du Levant · 47 330 Montauriol</p>
+        <p>SIRET 98306751300017</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-sophrologie.html">La sophrologie</a></li>
+          <li><a href="seances-et-tarifs.html">Séances & tarifs</a></li>
+          <li><a href="votre-sophrologue.html">Votre sophrologue</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:0616172869">06 16 17 28 69</a></p>
+        <p>Lun – Ven · 10h – 20h</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sophrolo'Joie · <a href="#">Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
